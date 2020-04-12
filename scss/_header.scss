@@ -1,0 +1,153 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 175px;
+
+  &__logo {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    margin: 15px 0 0 0;
+
+    @include media(mobile) {
+      margin: 10px 0 0 0;
+      width: 125px;
+    }
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 170px;
+    padding: 125px 0 0 60%;
+
+    @include media(mobile) {
+      padding: 125px 0 0 0;
+    }
+  }
+
+  &__nav {
+    margin: 5px 0 10px 0;
+    background-color: rgba(218, 227, 155, 1);
+    border-radius: 80px;
+    border: solid 0 transparent;
+
+    @include media(mobile) {
+      display: none;
+    }
+  }
+
+  &__burger, &__close {
+    display: none;
+    position: fixed;
+
+    @include media(mobile) {
+      top: 110px;
+      right: 10px;
+    }
+  }
+
+  &__burger {
+    @include media(mobile) {
+      display: block;
+    }
+  }
+}
+
+.header-nav {
+  &__item {
+    border-left: 1px solid rgba(149, 167, 18, 0.28);
+
+    &:first-child {
+      padding: 0 0 0 5px;
+      border: none;
+    }
+
+    &:last-child {
+      padding: 0 5px 0 0;
+    }
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.35);
+    }
+  }
+
+  &_selected {
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+
+  &__text, &__link {
+    padding: 0 15px;
+    text-align: center;
+    font: normal normal normal 13px/24px 'Open Sans', sans-serif;
+    color: #696969;
+
+    &:hover {
+      color: #000000;
+    }
+  }
+
+  &__link:focus {
+    background-color: rgba(255, 255, 255, 0.35);
+    color: #000000;
+  }
+
+  &__subitems {
+    background-color: rgba(247, 245, 225, 0.79);
+  }
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  right: 0;
+  width: 85%;
+  height: 100vh;
+  background: url(../img/mobile-nav-bg.jpg) no-repeat rgba(83, 90, 10, 1);
+  background-size: 100%;
+  z-index: 2;
+}
+
+.mobile-menu-overlay {
+  z-index: 1;
+}
+
+.mobile-nav {
+  margin: 75px 10px 0 10px;
+  background-color: rgba(247, 245, 225, 0.74);
+
+  ul {
+    flex-direction: column;
+  }
+
+  &__item {
+    border-bottom: 1px solid rgba(149, 167, 18, 0.28);
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.35);
+    }
+  }
+
+  &_selected {
+    background-color: rgba(218, 227, 155, 0.51);
+  }
+
+  &__text {
+    color: #7E7A7D;
+  }
+
+  &__link {
+    color: #252A04;
+  }
+
+  &__text, &__link {
+    padding: 16px 0 16px 16px;
+    font: normal normal normal 16px/24px 'Open Sans', sans-serif;
+
+    &:hover, &:focus {
+      color: #000000;
+    }
+  }
+}

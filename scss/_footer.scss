@@ -1,0 +1,99 @@
+.footer {
+  background-color: #dae39b;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100px;
+  }
+
+  &__title {
+    margin: 30px 0 30px 0;
+    text-align: center;
+    font: normal normal bold 23px/30px 'Open Sans', sans-serif;
+    color: #DAE39B;
+    z-index: 1;
+
+    @include media(mobile) {
+      font-size: 20px;
+      margin: 30px 10px 30px 10px;
+    }
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+    z-index: 1;
+  }
+
+  &__contacts {
+    padding: 10px 90px 25px 30px;
+    background: rgba(218, 227, 155, 0.7);
+    border-radius: 5px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(16, 164, 227, 1);
+    font: normal normal normal 16px/20px 'Open Sans', sans-serif;
+    color: #535A0A;
+
+    h4 {
+      font: normal normal normal 16px/20px 'Open Sans', sans-serif;
+    }
+
+    p {
+      margin-left: 8px;
+    }
+
+    a {
+      color: #535A0A;
+      text-decoration: none;
+    }
+
+    @include media(mobile) {
+      padding: 10px 70px 25px 15px;
+    }
+  }
+
+  &__form {
+    width: 510px;
+
+    @include media(mobile) {
+      margin: 25px 0 0 0;
+      width: 300px;
+    }
+  }
+}
+
+.footer-nav {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 0;
+  padding: 0 0 10px 0;
+  min-height: 60px;
+
+  &__text {
+    color: #95A712;
+  }
+
+  &__link {
+    color: #282527;
+  }
+
+  &__text, &__link {
+    padding: 0 15px 0 15px;
+    font: normal normal normal 12px/24px 'Open Sans', sans-serif;
+
+    &:hover, &:focus {
+      color: #95A712;
+    }
+  }
+
+  @include media(mobile) {
+    display: none;
+  }
+}

@@ -1,0 +1,31 @@
+.nav {
+  display: flex;
+
+  &__item {
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.4s ease 0s;
+
+    &:hover > .nav__subitems {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__text, &__link {
+    display: block;
+    transition: color 0.4s ease 0s;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__subitems {
+    position: absolute;
+    min-width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+  }
+}
