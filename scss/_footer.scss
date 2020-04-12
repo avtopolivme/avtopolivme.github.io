@@ -12,7 +12,7 @@
   &__title {
     margin: 30px 0 30px 0;
     text-align: center;
-    font: normal normal bold 23px/30px 'Open Sans', sans-serif;
+    font: normal normal bold 23px/30px $Sans;
     color: #DAE39B;
     z-index: 1;
 
@@ -42,11 +42,11 @@
     border-radius: 5px;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.6);
     border: 1px solid rgba(16, 164, 227, 1);
-    font: normal normal normal 16px/20px 'Open Sans', sans-serif;
+    font: normal normal normal 16px/20px $Sans;
     color: #535A0A;
 
     h4 {
-      font: normal normal normal 16px/20px 'Open Sans', sans-serif;
+      font: normal normal normal 16px/20px $Sans;
     }
 
     p {
@@ -94,7 +94,7 @@
 
   &__text, &__link {
     padding: 0 15px 0 15px;
-    font: normal normal normal 12px/24px 'Open Sans', sans-serif;
+    font: normal normal normal 12px/24px $Sans;
 
     &:hover, &:focus {
       color: #95A712;

@@ -1,23 +1,36 @@
+@import 'fonts';
+
 @mixin media($point) {
   @if $point == desktop {
-    @media screen and (min-width: 1400px) { @content; }
-  }
-  @else if $point == tablet {
-    @media screen and (max-width: 1024px) { @content; }
-  }
-  @else if $point == adaptive {
-    @media screen and (max-width: 1000px) { @content; }
-  }
-  @else if $point == mobile {
-    @media screen and (max-width: 767px) { @content; }
-  }
-  @else if $point == phone {
-    @media screen and (max-width: 480px) { @content; }
-  }
-  @else if $point == phone-small {
-    @media screen and (max-width: 374px) { @content; }
+    @media screen and (min-width: 1400px) {
+      @content;
+    }
+  } @else if $point == tablet {
+    @media screen and (max-width: 1024px) {
+      @content;
+    }
+  } @else if $point == adaptive {
+    @media screen and (max-width: 1000px) {
+      @content;
+    }
+  } @else if $point == mobile {
+    @media screen and (max-width: 767px) {
+      @content;
+    }
+  } @else if $point == phone {
+    @media screen and (max-width: 480px) {
+      @content;
+    }
+  } @else if $point == phone-small {
+    @media screen and (max-width: 374px) {
+      @content;
+    }
   }
 }
+
+$Sans: 'Open Sans', Arial, sans-serif;
+$Futura: futura-lt-w01-book, Arial, sans-serif;
+$Verdana: Verdana, Geneva, Arial, sans-serif;
 
 @import 'reset';
 @import 'buttons';
@@ -56,13 +69,13 @@
   width: 100%;
 
   @include media(tablet) {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: auto;
-      min-width: 100%;
-      min-height: 100%;
-      transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
   }
 }
 

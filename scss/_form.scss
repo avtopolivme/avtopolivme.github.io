@@ -16,7 +16,7 @@
     height: 42px;
     background-color: rgba(218, 227, 155, 1);
     border: 1px solid rgba(37, 42, 4, 0.55);
-    font: normal normal normal 12px/16px Verdana, geneva, sans-serif;
+    font: normal normal normal 12px/16px $Verdana;
     color: #252A04;
 
     &::placeholder {
@@ -62,7 +62,7 @@
     width: 140px;
     background-color: rgba(126, 122, 125, 1);
     border: none;
-    font: normal normal normal 12px/16px Verdana, geneva, sans-serif;
+    font: normal normal normal 12px/16px $Verdana;
     color: #FFFFFF;
     cursor: pointer;
     transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
@@ -107,7 +107,7 @@
 
   &__agree {
     margin: 0 0 10px 0;
-    font: normal normal normal 12px/16px Verdana, geneva, sans-serif;
+    font: normal normal normal 12px/16px $Verdana;
     color: #252A04;
 
     span {

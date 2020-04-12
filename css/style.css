@@ -1,3 +1,28 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/OpenSans-Regular.eot") format("eot"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/OpenSans-Bold.eot") format("eot"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/OpenSans-Italic.eot") format("eot"), url("../fonts/OpenSans-Italic.woff") format("woff"), url("../fonts/OpenSans-Italic.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/OpenSans-BoldItalic.eot") format("eot"), url("../fonts/OpenSans-BoldItalic.woff") format("woff"), url("../fonts/OpenSans-BoldItalic.ttf") format("truetype"); }
+@font-face {
+  font-family: "Futura-LT-W01-Book";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/FuturaLT-Book.eot") format("eot"), url("../fonts/FuturaLT-Book.woff") format("woff"), url("../fonts/FuturaLT-Book.ttf") format("truetype"); }
 /*
  * https://hankchizljaw.com/wrote/a-modern-css-reset/
  */
@@ -141,7 +166,7 @@ select {
   height: 42px;
   background-color: #dae39b;
   border: 1px solid rgba(37, 42, 4, 0.55);
-  font: normal normal normal 12px/16px Verdana, geneva, sans-serif;
+  font: normal normal normal 12px/16px Verdana, Geneva, Arial, sans-serif;
   color: #252A04; }
   .form__input::placeholder, .form__textarea::placeholder {
     color: #252A04; }
@@ -171,7 +196,7 @@ select {
   width: 140px;
   background-color: #7e7a7d;
   border: none;
-  font: normal normal normal 12px/16px Verdana, geneva, sans-serif;
+  font: normal normal normal 12px/16px Verdana, Geneva, Arial, sans-serif;
   color: #FFFFFF;
   cursor: pointer;
   transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s; }
@@ -202,7 +227,7 @@ select {
     color: #252A04; }
 .form__agree {
   margin: 0 0 10px 0;
-  font: normal normal normal 12px/16px Verdana, geneva, sans-serif;
+  font: normal normal normal 12px/16px Verdana, Geneva, Arial, sans-serif;
   color: #252A04; }
   .form__agree span {
     width: 290px; }
@@ -266,10 +291,12 @@ select {
 .header-nav__text, .header-nav__link {
   padding: 0 15px;
   text-align: center;
-  font: normal normal normal 13px/24px 'Open Sans', sans-serif;
+  font: normal normal normal 13px/24px futura-lt-w01-book, Arial, sans-serif;
   color: #696969; }
   .header-nav__text:hover, .header-nav__link:hover {
     color: #000000; }
+.header-nav__text {
+  color: #000000; }
 .header-nav__link:focus {
   background-color: rgba(255, 255, 255, 0.35);
   color: #000000; }
@@ -303,7 +330,7 @@ select {
     color: #252A04; }
   .mobile-nav__text, .mobile-nav__link {
     padding: 16px 0 16px 16px;
-    font: normal normal normal 16px/24px 'Open Sans', sans-serif; }
+    font: normal normal normal 16px/24px "Open Sans", Arial, sans-serif; }
     .mobile-nav__text:hover, .mobile-nav__text:focus, .mobile-nav__link:hover, .mobile-nav__link:focus {
       color: #000000; }
 
@@ -318,7 +345,7 @@ select {
   .footer__title {
     margin: 30px 0 30px 0;
     text-align: center;
-    font: normal normal bold 23px/30px 'Open Sans', sans-serif;
+    font: normal normal bold 23px/30px "Open Sans", Arial, sans-serif;
     color: #DAE39B;
     z-index: 1; }
     @media screen and (max-width: 767px) {
@@ -342,10 +369,10 @@ select {
     border-radius: 5px;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.6);
     border: 1px solid #10a4e3;
-    font: normal normal normal 16px/20px 'Open Sans', sans-serif;
+    font: normal normal normal 16px/20px "Open Sans", Arial, sans-serif;
     color: #535A0A; }
     .footer__contacts h4 {
-      font: normal normal normal 16px/20px 'Open Sans', sans-serif; }
+      font: normal normal normal 16px/20px "Open Sans", Arial, sans-serif; }
     .footer__contacts p {
       margin-left: 8px; }
     .footer__contacts a {
@@ -376,7 +403,7 @@ select {
     color: #282527; }
   .footer-nav__text, .footer-nav__link {
     padding: 0 15px 0 15px;
-    font: normal normal normal 12px/24px 'Open Sans', sans-serif; }
+    font: normal normal normal 12px/24px "Open Sans", Arial, sans-serif; }
     .footer-nav__text:hover, .footer-nav__text:focus, .footer-nav__link:hover, .footer-nav__link:focus {
       color: #95A712; }
   @media screen and (max-width: 767px) {
