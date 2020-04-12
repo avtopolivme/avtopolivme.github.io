@@ -94,7 +94,7 @@
                     </li>
                 </ul>
             </nav>
-            <div class="mobile-menu">
+            <div class="mobile-menu js-mobile-menu">
                 <nav class="mobile-nav">
                     <ul class="nav">
                         <li class="nav__item mobile-nav__item">
@@ -121,13 +121,13 @@
                     </ul>
                 </nav>
             </div>
-            <div class="overlay mobile-menu-overlay"></div>
-            <button class="burger header__burger">
+            <div class="overlay mobile-menu-overlay js-mobile-menu-overlay"></div>
+            <button class="burger header__burger js-burger">
                 <span class="burger__line"></span>
                 <span class="burger__line"></span>
                 <span class="burger__line"></span>
             </button>
-            <button class="close header__close">
+            <button class="close header__close js-close">
                 <span class="close__cross"></span>
             </button>
         </header>
@@ -183,7 +183,6 @@
                     </form>
                 </div>
             </section>
-
             <nav class="footer-nav">
                 <ul class="nav">
                     <li class="nav__item">
@@ -206,11 +205,14 @@
                     </li>
                 </ul>
             </nav>
-
-            <div class="loader js-loader">
-                <img src="img/loader.gif" alt="">
-            </div>
-            <div class="overlay js-overlay"></div>
         </footer>
+
+        <div class="loader js-loader">
+            <img src="img/loader.gif" alt="">
+        </div>
+        <div class="overlay js-overlay"></div>
+
+        <script src="js/vendor/jquery-3.5.0.min.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>

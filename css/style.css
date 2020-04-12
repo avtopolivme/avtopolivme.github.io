@@ -67,7 +67,7 @@ select {
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.6);
   background-color: #535a0a;
   cursor: pointer;
-  z-index: 10; }
+  z-index: 1000; }
   .burger__line {
     display: block;
     position: relative;
@@ -86,7 +86,7 @@ select {
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.6);
   background-color: #e6deca;
   cursor: pointer;
-  z-index: 10; }
+  z-index: 1000; }
   .close__cross:before, .close__cross:after {
     content: ' ';
     position: absolute;
@@ -284,10 +284,7 @@ select {
   height: 100vh;
   background: url(../img/mobile-nav-bg.jpg) no-repeat #535a0a;
   background-size: 100%;
-  z-index: 2; }
-
-.mobile-menu-overlay {
-  z-index: 1; }
+  z-index: 1000; }
 
 .mobile-nav {
   margin: 75px 10px 0 10px;
