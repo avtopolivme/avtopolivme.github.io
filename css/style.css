@@ -168,6 +168,27 @@ select {
     opacity: 0;
     z-index: 10; }
 
+.check {
+  display: block;
+  padding: 0 0 0 20px; }
+  .check__box {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    margin: 0 0 0 -20px;
+    border: 1px solid rgba(37, 42, 4, 0.55);
+    background-color: #dae39b; }
+    .check__box_error {
+      background-color: #fbf3f3;
+      border: 1px solid #f60419; }
+  .check__input:checked + .check__box {
+    background-image: url('data:image/svg+xml,%0A%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"%3E%3Cpolyline fill="none" stroke="%23414A07" stroke-width="3" points="1.079 4.999 5 9 10.837 2"/%3E%3C/svg%3E'); }
+  .check__input:focus + .check__box {
+    border: 1px solid #4D90FE; }
+  .check__input:disabled + .check__box {
+    background-color: #BFBFBF;
+    border: 1px solid #909090; }
+
 .form__row {
   display: flex;
   justify-content: space-between;
@@ -218,37 +239,12 @@ select {
   transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s; }
   .form__submit:hover {
     background-color: #a9a5a8; }
-.form__checkbox {
-  position: absolute;
-  z-index: -1;
-  opacity: 0; }
-  .form__checkbox:checked + label:before {
-    content: '\2713'; }
-  .form__checkbox:focus + label:before {
-    border: 1px solid #4d90fe; }
-.form__checkbox + label {
-  position: relative;
-  padding: 0 0 0 35px;
-  cursor: pointer; }
-  .form__checkbox + label:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 15px;
-    height: 15px;
-    background-color: #dae39b;
-    border: 1px solid rgba(37, 42, 4, 0.55);
-    font-size: 15px;
-    line-height: 15px;
-    color: #252A04; }
 .form__agree {
+  width: 290px;
   margin: 0 0 10px 0;
   font: normal normal normal 12px/16px Verdana, Geneva, Arial, sans-serif;
-  color: #252A04; }
-  .form__agree span {
-    width: 290px; }
-  .form__agree span, .form__agree a {
-    display: block;
+  color: #DAE39B; }
+  .form__agree a {
     color: #DAE39B; }
 
 .header {
@@ -430,6 +426,16 @@ select {
   @media screen and (max-width: 767px) {
     .footer-nav {
       display: none; } }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
 
 .loader {
   position: fixed;
