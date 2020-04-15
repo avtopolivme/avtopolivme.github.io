@@ -427,6 +427,26 @@ select {
     .footer-nav {
       display: none; } }
 
+.mobile-panel {
+  display: none;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; }
+  .mobile-panel__phone, .mobile-panel__email {
+    text-decoration: none;
+    margin: 5px 0 0 0; }
+    .mobile-panel__phone svg, .mobile-panel__email svg {
+      width: 50px;
+      height: 30px; }
+  .mobile-panel__phone {
+    fill: #63C956; }
+  .mobile-panel__email {
+    fill: #BE1867; }
+  @media screen and (max-width: 767px) {
+    .mobile-panel {
+      display: flex; } }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
