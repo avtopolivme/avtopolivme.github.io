@@ -125,6 +125,22 @@ select {
   .close__cross:after {
     transform: rotate(-45deg); }
 
+.arrow {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border: 2px solid #95a712;
+  background-color: #dae39b;
+  cursor: pointer;
+  z-index: 900; }
+  .arrow svg {
+    height: 35px;
+    width: 30px;
+    padding: 5px 0 0 0;
+    stroke: #95a712; }
+    .arrow svg:hover {
+      stroke: #535a0a; }
+
 .social {
   display: flex; }
   .social__item {
@@ -276,6 +292,11 @@ select {
   @media screen and (max-width: 767px) {
     .header__burger {
       display: block; } }
+  .header__arrow {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px; }
 
 .header-nav__item {
   border-left: 1px solid rgba(149, 167, 18, 0.28); }
@@ -458,6 +479,6 @@ select {
 
 main {
   background-color: cadetblue;
-  min-height: 100px; }
+  min-height: 300px; }
 
 /*# sourceMappingURL=style.css.map */

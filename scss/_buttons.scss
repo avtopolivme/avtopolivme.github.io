@@ -51,3 +51,25 @@
     }
   }
 }
+
+.arrow {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border: 2px solid rgba(149, 167, 18, 1);
+  background-color: rgba(218, 227, 155, 1);
+  cursor: pointer;
+  z-index: 900;
+
+  svg {
+    height: 35px;
+    width: 30px;
+    padding: 5px 0 0 0;
+    stroke: rgba(149, 167, 18, 1);
+
+    &:hover {
+      stroke: rgba(83, 90, 10, 1);
+    }
+  }
+
+}

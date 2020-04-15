@@ -54,6 +54,13 @@
       display: block;
     }
   }
+
+  &__arrow {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+  }
 }
 
 .header-nav {
