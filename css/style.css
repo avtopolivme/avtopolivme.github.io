@@ -251,12 +251,12 @@ select {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  min-height: 175px; }
+  min-height: 160px; }
   .header__logo {
     position: absolute;
     right: 50%;
     transform: translateX(50%);
-    margin: 15px 0 0 0; }
+    margin: 10px 0 0 0; }
     @media screen and (max-width: 767px) {
       .header__logo {
         margin: 10px 0 0 0;
@@ -265,11 +265,11 @@ select {
     display: flex;
     justify-content: center;
     width: 100%;
-    min-height: 170px;
-    padding: 125px 0 0 60%; }
+    min-height: 160px;
+    padding: 115px 0 0 60%; }
     @media screen and (max-width: 767px) {
       .header__social {
-        padding: 125px 0 0 0; } }
+        padding: 115px 0 0 0; } }
   .header__nav {
     margin: 5px 0 10px 0;
     background-color: #dae39b;
@@ -283,7 +283,7 @@ select {
     position: fixed; }
     @media screen and (max-width: 767px) {
       .header__burger, .header__close {
-        top: 110px;
+        top: 105px;
         right: 10px; } }
   @media screen and (max-width: 767px) {
     .header__burger {

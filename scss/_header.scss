@@ -2,13 +2,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  min-height: 175px;
+  min-height: 160px;
 
   &__logo {
     position: absolute;
     right: 50%;
     transform: translateX(50%);
-    margin: 15px 0 0 0;
+    margin: 10px 0 0 0;
 
     @include media(mobile) {
       margin: 10px 0 0 0;
@@ -20,11 +20,11 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    min-height: 170px;
-    padding: 125px 0 0 60%;
+    min-height: 160px;
+    padding: 115px 0 0 60%;
 
     @include media(mobile) {
-      padding: 125px 0 0 0;
+      padding: 115px 0 0 0;
     }
   }
 
@@ -44,7 +44,7 @@
     position: fixed;
 
     @include media(mobile) {
-      top: 110px;
+      top: 105px;
       right: 10px;
     }
   }
