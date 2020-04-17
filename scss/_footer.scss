@@ -13,6 +13,7 @@
     margin: 30px 0 30px 0;
     text-align: center;
     font: normal normal bold 23px/30px $Sans;
+    text-shadow: 1px 1px 2px black;
     color: #DAE39B;
     z-index: 1;
 
@@ -38,7 +39,7 @@
 
   &__contacts {
     padding: 10px 90px 25px 30px;
-    background: rgba(218, 227, 155, 0.7);
+    background: url(../img/shadow.png) repeat-x 0 0 rgba(218, 227, 155, 0.7);
     border-radius: 5px;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.6);
     border: 1px solid rgba(16, 164, 227, 1);
@@ -72,6 +73,24 @@
 
     @include media(mobile) {
       margin: 25px 0 0 0;
+    }
+  }
+}
+
+.footer_white {
+  background-color: white;
+
+  .footer__title {
+    color: #20303C;
+    text-shadow: none;
+  }
+
+  .footer__contacts {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #20303C;
+
+    a {
+      color: #20303C;
     }
   }
 }
@@ -110,7 +129,7 @@
   display: none;
   justify-content: space-around;
   margin: 0;
-  padding: 10px 0 5px 0px;
+  padding: 10px 0 5px 0;
   background-color: #ffffff;
 
   &__phone, &__email {
