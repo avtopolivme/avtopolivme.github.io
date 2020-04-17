@@ -1,5 +1,5 @@
 .footer {
-  background-color: #dae39b;
+  background-color: white;
 
   &__content {
     display: flex;
@@ -13,8 +13,7 @@
     margin: 30px 0 30px 0;
     text-align: center;
     font: normal normal bold 23px/30px $Sans;
-    text-shadow: 1px 1px 2px black;
-    color: #DAE39B;
+    color: #20303C;
     z-index: 1;
 
     @include media(mobile) {
@@ -39,12 +38,12 @@
 
   &__contacts {
     padding: 10px 90px 25px 30px;
-    background: url(../img/shadow.png) repeat-x 0 0 rgba(218, 227, 155, 0.7);
+    background: url(../img/shadow.png) repeat-x 0 0 rgba(255, 255, 255, 0.8);
     border-radius: 5px;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.6);
     border: 1px solid rgba(16, 164, 227, 1);
     font: normal normal normal 16px/20px $Sans;
-    color: #535A0A;
+    color: #20303C;
 
     h4 {
       font: normal normal normal 16px/20px $Sans;
@@ -55,7 +54,7 @@
     }
 
     a {
-      color: #535A0A;
+      color: #20303C;
       text-decoration: none;
     }
 
@@ -77,20 +76,20 @@
   }
 }
 
-.footer_white {
-  background-color: white;
+.footer_green {
+  background-color: #dae39b;
 
   .footer__title {
-    color: #20303C;
-    text-shadow: none;
+    text-shadow: 1px 1px 2px black;
+    color: #DAE39B;
   }
 
   .footer__contacts {
-    background-color: rgba(255, 255, 255, 0.8);
-    color: #20303C;
+    background-color: rgba(218, 227, 155, 0.7);
+    color: #535A0A;
 
     a {
-      color: #20303C;
+      color: #535A0A;
     }
   }
 }
