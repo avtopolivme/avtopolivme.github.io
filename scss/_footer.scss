@@ -110,12 +110,11 @@
   display: none;
   justify-content: space-around;
   margin: 0;
-  padding: 0;
+  padding: 10px 0 5px 0px;
   background-color: #ffffff;
 
   &__phone, &__email {
     text-decoration: none;
-    margin: 5px 0 0 0;
 
     svg {
       width: 50px;

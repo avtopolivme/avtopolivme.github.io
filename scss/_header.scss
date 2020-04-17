@@ -60,6 +60,10 @@
     position: fixed;
     bottom: 10px;
     right: 10px;
+
+    @include media(mobile) {
+      bottom: 50px;
+    }
   }
 }
 

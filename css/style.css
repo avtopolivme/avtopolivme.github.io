@@ -293,6 +293,9 @@ select {
     position: fixed;
     bottom: 10px;
     right: 10px; }
+    @media screen and (max-width: 767px) {
+      .header__arrow {
+        bottom: 50px; } }
 
 .header-nav__item {
   border-left: 1px solid rgba(149, 167, 18, 0.28); }
@@ -431,11 +434,10 @@ select {
   display: none;
   justify-content: space-around;
   margin: 0;
-  padding: 0;
+  padding: 10px 0 5px 0px;
   background-color: #ffffff; }
   .mobile-panel__phone, .mobile-panel__email {
-    text-decoration: none;
-    margin: 5px 0 0 0; }
+    text-decoration: none; }
     .mobile-panel__phone svg, .mobile-panel__email svg {
       width: 50px;
       height: 30px; }
