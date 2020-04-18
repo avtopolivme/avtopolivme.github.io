@@ -532,6 +532,19 @@ main {
       .content h2 {
         font-size: 20px; } }
 
+.breadcrumbs {
+  font: normal normal normal 12px/16px Verdana, Geneva, Arial, sans-serif;
+  margin: 0 0 10px 0; }
+  .breadcrumbs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .breadcrumbs ul li {
+      display: inline-block;
+      vertical-align: top; }
+    .breadcrumbs ul li + li:before {
+      content: "/"; }
+
 .reviews {
   display: flex;
   flex-direction: column;
