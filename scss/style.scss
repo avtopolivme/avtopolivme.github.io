@@ -59,6 +59,7 @@ main {
   color: #282527;
 
   @include media(mobile) {
+    padding: 20px 25px 50px 25px;
     min-height: 600px;
   }
 
@@ -68,6 +69,7 @@ main {
     line-height: normal;
 
     @include media(mobile) {
+      text-align: center;
       font-size: 24px;
     }
   }
