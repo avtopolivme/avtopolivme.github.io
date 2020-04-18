@@ -40,6 +40,50 @@ $Verdana: Verdana, Geneva, Arial, sans-serif;
 @import 'header';
 @import 'footer';
 
+main {
+  margin: 0;
+  padding: 0 0 50px 0;
+  background: url(../img/shadow.png) repeat-x 0 0 #95a712;
+
+  @include media(mobile) {
+    padding: 0 0 0 0;
+  }
+}
+
+.content {
+  margin: auto;
+  padding: 75px 45px 100px 45px;
+  max-width: 1000px;
+  background: url(../img/shadow.png) repeat-x 0 0 white;
+  font: italic normal normal 12px/15px $Sans;
+  color: #282527;
+
+  @include media(mobile) {
+    min-height: 600px;
+  }
+
+  h1 {
+    margin: 0 0 35px 0;
+    font-size: 28px;
+    line-height: normal;
+
+    @include media(mobile) {
+      font-size: 24px;
+    }
+  }
+
+  h2 {
+    margin: 10px 0 5px 0;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: normal;
+
+    @include media(mobile) {
+      font-size: 20px;
+    }
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -102,44 +146,4 @@ $Verdana: Verdana, Geneva, Arial, sans-serif;
 
 .text_bold {
   font-weight: bold;
-}
-
-main {
-  margin: 0;
-  padding: 0 0 50px 0;
-  background: url(../img/shadow.png) repeat-x 0 0 #95a712;
-
-  @include media(mobile) {
-    padding: 0 0 0 0;
-  }
-}
-
-.content {
-  margin: auto;
-  padding: 75px 45px 100px 45px;
-  max-width: 1000px;
-  background: url(../img/shadow.png) repeat-x 0 0 white;
-  font: italic normal normal 12px/15px $Sans;
-  color: #282527;
-
-  h1 {
-    margin: 0 0 35px 0;
-    font-size: 28px;
-    line-height: normal;
-
-    @include media(mobile) {
-      font-size: 24px;
-    }
-  }
-
-  h2 {
-    margin: 10px 0 5px 0;
-    font-size: 24px;
-    font-weight: normal;
-    line-height: normal;
-
-    @include media(mobile) {
-      font-size: 20px;
-    }
-  }
 }
