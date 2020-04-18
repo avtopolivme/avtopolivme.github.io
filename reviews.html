@@ -30,6 +30,7 @@
         <meta property="og:site_name" content="avtopoliv">
         <meta property="og:type" content="website">
 
+        <link href="css/vendor/jquery.fancybox.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
@@ -143,9 +144,82 @@
                 </svg>
             </button>
         </header>
-
-        <main></main>
-
+        <main>
+            <section class="content">
+                <h1>Отзывы</h1>
+                <section class="reviews js-items">
+                    <div class="reviews__item">
+                        <div class="reviews__row">
+                            <a class="reviews__image" href="img/reviews/1.webp" data-fancybox>
+                                <img src="img/reviews/1.webp" alt="">
+                            </a>
+                            <div class="reviews__label">
+                                <p>Г.А.</p>
+                                <p>г. Бердск</p>
+                                <p>07.07.18 г.</p>
+                            </div>
+                        </div>
+                        <div class="reviews__text">
+                            В 2017 году компания "Индига" установила на нашем участке автоматический полив. Очень быстро
+                            собрали систему автополива, доступно объяснили как она работает. Все лето система работала
+                            без проблем. Осенью систему отключили, весной подключили. Очень удобно! В этом году
+                            установили капельный полив на огороде, можно спокойно уезжать и не волноваться. Работой
+                            очень, очень довольны!!! Спасибо компании "Индига" за быструю и качественную работу. Всем
+                            рекомендую вашу компанию для установки автополива!"
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__row">
+                            <a class="reviews__image" href="img/reviews/1.webp" data-fancybox>
+                                <img src="img/reviews/1.webp" alt="">
+                            </a>
+                            <div class="reviews__label">
+                                <p>Г.А.</p>
+                                <p>г. Бердск</p>
+                                <p>07.07.18 г.</p>
+                            </div>
+                        </div>
+                        <div class="reviews__text">
+                            В 2017 году компания "Индига" установила на нашем участке автоматический полив. Очень быстро
+                            собрали систему автополива, доступно объяснили как она работает. Все лето система работала
+                            без проблем. Осенью систему отключили, весной подключили. Очень удобно! В этом году
+                            установили капельный полив на огороде, можно спокойно уезжать и не волноваться. Работой
+                            очень, очень довольны!!! Спасибо компании "Индига" за быструю и качественную работу. Всем
+                            рекомендую вашу компанию для установки автополива!"
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__row">
+                            <a class="reviews__image" href="img/reviews/1.webp" data-fancybox>
+                                <img src="img/reviews/1.webp" alt="">
+                            </a>
+                            <div class="reviews__label">
+                                <p>Г.А.</p>
+                                <p>г. Бердск</p>
+                                <p>07.07.18 г.</p>
+                            </div>
+                        </div>
+                        <div class="reviews__text">
+                            В 2017 году компания "Индига" установила на нашем участке автоматический полив. Очень быстро
+                            собрали систему автополива, доступно объяснили как она работает. Все лето система работала
+                            без проблем. Осенью систему отключили, весной подключили. Очень удобно! В этом году
+                            установили капельный полив на огороде, можно спокойно уезжать и не волноваться. Работой
+                            очень, очень довольны!!! Спасибо компании "Индига" за быструю и качественную работу. Всем
+                            рекомендую вашу компанию для установки автополива!"
+                        </div>
+                    </div>
+                </section>
+                <script id="reviewsTmpl" type="text/x-jsrender">
+                    <div class="reviews__item">
+                        <div class="reviews__row">
+                            <a class="reviews__image" href="{{:image}}" data-fancybox><img src="{{:image}}" alt=""></a>
+                            <div class="reviews__label">{{:label}}</div>
+                        </div>
+                        <div class="reviews__text">{{:text}}</div>
+                    </div>
+                </script>
+            </section>
+        </main>
         <footer class="footer">
             <nav class="footer-nav">
                 <ul class="nav">
@@ -200,6 +274,8 @@
         <div class="overlay js-overlay"></div>
 
         <script src="js/vendor/jquery-3.5.0.min.js"></script>
+        <script src="js/vendor/jsrender.min.js"></script>
+        <script src="js/vendor/jquery.fancybox.min.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>
