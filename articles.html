@@ -144,9 +144,86 @@
                 </svg>
             </button>
         </header>
-
-        <main></main>
-
+        <main>
+            <section class="articles js-items">
+                <article class="articles__item">
+                    <div class="articles__image">
+                        <img src="img/articles/1.webp" alt="">
+                    </div>
+                    <div class="articles__row">
+                        <h2>
+                            <a href="article.html">Бесплатный проект системы автополива. Правда&nbsp;или&nbsp;обман?</a>
+                        </h2>
+                        <p>
+                            Когда наша организация только начинала заниматься системами полива, а это было в 2013 году,
+                            мы делали бесплатные проекты. Делали проект по-честному, т.е. клиент получал на руки такой
+                            же проект, который мы делаем и сейчас. Со всеми схемами, гидрорассчетами, подробной сметой и
+                            т.д.
+                        </p>
+                        <br>
+                        <p>
+                            Сейчас интернет пестрит объявлениями о бесплатных проектах, обещают сделать его за день. Да,
+                            мы тоже можем за день-два сделать проект, если у нас нет очереди... Если есть, то за де...
+                        </p>
+                        <div class="articles__label">03 марта 2020</div>
+                    </div>
+                </article>
+                <article class="articles__item">
+                    <div class="articles__image">
+                        <img src="img/articles/1.webp" alt="">
+                    </div>
+                    <div class="articles__row">
+                        <h2>
+                            <a href="article.html">Бесплатный проект системы автополива. Правда&nbsp;или&nbsp;обман?</a>
+                        </h2>
+                        <p>
+                            Когда наша организация только начинала заниматься системами полива, а это было в 2013 году,
+                            мы делали бесплатные проекты. Делали проект по-честному, т.е. клиент получал на руки такой
+                            же проект, который мы делаем и сейчас. Со всеми схемами, гидрорассчетами, подробной сметой и
+                            т.д.
+                        </p>
+                        <br>
+                        <p>
+                            Сейчас интернет пестрит объявлениями о бесплатных проектах, обещают сделать его за день. Да,
+                            мы тоже можем за день-два сделать проект, если у нас нет очереди... Если есть, то за де...
+                        </p>
+                        <div class="articles__label">03 марта 2020</div>
+                    </div>
+                </article>
+                <article class="articles__item">
+                    <div class="articles__image">
+                        <img src="img/articles/1.webp" alt="">
+                    </div>
+                    <div class="articles__row">
+                        <h2>
+                            <a href="article.html">Бесплатный проект системы автополива. Правда&nbsp;или&nbsp;обман?</a>
+                        </h2>
+                        <p>
+                            Когда наша организация только начинала заниматься системами полива, а это было в 2013 году,
+                            мы делали бесплатные проекты. Делали проект по-честному, т.е. клиент получал на руки такой
+                            же проект, который мы делаем и сейчас. Со всеми схемами, гидрорассчетами, подробной сметой и
+                            т.д.
+                        </p>
+                        <br>
+                        <p>
+                            Сейчас интернет пестрит объявлениями о бесплатных проектах, обещают сделать его за день. Да,
+                            мы тоже можем за день-два сделать проект, если у нас нет очереди... Если есть, то за де...
+                        </p>
+                        <div class="articles__label">03 марта 2020</div>
+                    </div>
+                </article>
+            </section>
+            <script id="articlesTmpl" type="text/x-jsrender">
+                <article class="articles__item">
+                    <div class="articles__image"><img src="{{:image}}" alt="{{:name}}"></div>
+                    <div class="articles__row">
+                        <h2><a href="article.html">{{:name}}</a></h2>
+                        {{:text}}
+                        <div class="articles__label">{{:label}}</div>
+                    </div>
+                </article>
+            </script>
+        </main>
         <footer class="footer footer_green">
             <section class="footer__content">
                 <video class="video-bg" preload="auto" autoplay="autoplay" loop="loop" muted="muted" poster="img/form-bg-1.jpg">

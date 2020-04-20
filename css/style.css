@@ -502,11 +502,7 @@ main {
   position: relative;
   overflow: hidden;
   margin: 0;
-  padding: 0 0 50px 0;
   background: url(../img/shadow.png) repeat-x 0 0 #95a712; }
-  @media screen and (max-width: 767px) {
-    main {
-      padding: 0 0 0 0; } }
   main .video-bg {
     top: 50%;
     left: 50%;
@@ -517,7 +513,7 @@ main {
 
 .content {
   position: relative;
-  margin: auto;
+  margin: 0 auto 50px auto;
   padding: 75px 45px 100px 45px;
   max-width: 1000px;
   background: url(../img/shadow.png) repeat-x 0 0 white;
@@ -525,6 +521,7 @@ main {
   color: #282527; }
   @media screen and (max-width: 767px) {
     .content {
+      margin: 0 auto 0 auto;
       padding: 20px 25px 50px 25px;
       min-height: 600px; } }
   .content h1 {
@@ -640,6 +637,67 @@ main {
         background-color: rgba(218, 227, 155, 0.6); }
         .contacts__form .check__box_error {
           background-color: rgba(251, 243, 243, 0.6); }
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  background: url(../img/shadow.png) repeat-x 0 0 white;
+  font: normal normal normal 14px/1.3em "Open Sans", Arial, sans-serif;
+  color: #282527; }
+  .articles h2 {
+    margin: 0 55px 50px 55px;
+    color: #535A0A;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: normal; }
+    .articles h2 a {
+      color: #535A0A; }
+  .articles__item {
+    display: flex;
+    align-items: center;
+    background-color: #dae39b; }
+    .articles__item:nth-child(odd) {
+      background-color: #e8dfc5; }
+      .articles__item:nth-child(odd) .articles__image {
+        order: 1; }
+  .articles__image {
+    margin: 0;
+    padding: 0;
+    max-width: 500px;
+    min-width: 500px; }
+    .articles__image img {
+      margin: 0;
+      padding: 0;
+      width: 100%; }
+  .articles__row {
+    padding: 40px 70px 30px 70px; }
+  .articles__label {
+    font-size: 12px;
+    padding: 10px 0 0 0;
+    font-style: italic; }
+  @media screen and (min-width: 1400px) {
+    .articles__image {
+      max-width: 600px;
+      min-width: 600px; }
+    .articles__row {
+      padding: 50px 150px 50px 150px; } }
+  @media screen and (max-width: 1024px) {
+    .articles__item {
+      flex-direction: column; }
+      .articles__item:nth-child(odd) .articles__image {
+        order: 0; }
+    .articles__image {
+      min-width: auto; }
+    .articles__row {
+      padding: 20px 30px 30px 30px; } }
+  @media screen and (max-width: 767px) {
+    .articles h2 {
+      margin: 0 15px 25px 15px;
+      font-size: 18px; }
+    .articles__row {
+      padding: 10px 30px 70px 30px; } }
 
 .visually-hidden {
   position: absolute;
