@@ -201,6 +201,10 @@ main {
   &__form {
     margin: 100px 40px 0 40px;
 
+    @include media(mobile) {
+      margin: 100px 10px 0 10px;
+    }
+
     .form__input, .form__textarea {
       background-color: rgba(218, 227, 155, 0.6);
       color: rgb(83, 90, 10);

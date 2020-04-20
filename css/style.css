@@ -618,6 +618,9 @@ main {
     text-decoration: none; }
   .contacts__form {
     margin: 100px 40px 0 40px; }
+    @media screen and (max-width: 767px) {
+      .contacts__form {
+        margin: 100px 10px 0 10px; } }
     .contacts__form .form__input, .contacts__form .form__textarea {
       background-color: rgba(218, 227, 155, 0.6);
       color: #535a0a; }
