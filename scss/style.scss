@@ -92,6 +92,15 @@ main {
       font-size: 20px;
     }
   }
+
+  &_full-width{
+    margin: 0;
+    max-width: 100%;
+
+    @include media(mobile) {
+      margin: 0;
+    }
+  }
 }
 
 .breadcrumbs {
@@ -339,6 +348,33 @@ main {
   }
 }
 
+.article {
+  padding: 75px 15% 100px 15%;
+  font: normal normal normal 14px/1.3em $Verdana;
+
+  h1 {
+    font: normal normal normal 34px/1.3em $Sans;
+    color: #535A0A;
+
+    @include media(mobile) {
+      text-align: center;
+      font-size: 24px;
+    }
+  }
+
+  img {
+    margin: 5px auto 10px auto;
+  }
+
+  @include media(desktop) {
+    padding: 75px 25% 100px 25%;
+  }
+
+  @include media(tablet) {
+    padding: 75px 10% 100px 10%;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -400,4 +436,9 @@ main {
 
 .text_bold {
   font-weight: bold;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
 }
