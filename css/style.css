@@ -499,14 +499,24 @@ select {
       display: flex; } }
 
 main {
+  position: relative;
+  overflow: hidden;
   margin: 0;
   padding: 0 0 50px 0;
   background: url(../img/shadow.png) repeat-x 0 0 #95a712; }
   @media screen and (max-width: 767px) {
     main {
       padding: 0 0 0 0; } }
+  main .video-bg {
+    top: 50%;
+    left: 50%;
+    width: auto;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%); }
 
 .content {
+  position: relative;
   margin: auto;
   padding: 75px 45px 100px 45px;
   max-width: 1000px;
@@ -596,6 +606,38 @@ main {
       .reviews__text {
         margin: 0; } }
 
+.contacts {
+  background: rgba(255, 255, 255, 0.6);
+  font: normal normal normal 16px/1.3em Verdana, Geneva, Arial, sans-serif;
+  color: #535A0A; }
+  .contacts h1 {
+    font: italic normal normal 34px/1.1em Verdana, Geneva, Arial, sans-serif;
+    color: #282527; }
+  .contacts a {
+    color: #535A0A;
+    text-decoration: none; }
+  .contacts__form {
+    margin: 100px 40px 0 40px; }
+    .contacts__form .form__input, .contacts__form .form__textarea {
+      background-color: rgba(218, 227, 155, 0.6);
+      color: #535a0a; }
+      .contacts__form .form__input::placeholder, .contacts__form .form__textarea::placeholder {
+        color: #535a0a; }
+    .contacts__form .form_error {
+      background-color: rgba(251, 243, 243, 0.6); }
+    .contacts__form .form__agree {
+      text-shadow: none;
+      color: #282527; }
+      .contacts__form .form__agree a {
+        color: #282527;
+        text-decoration: underline; }
+    .contacts__form .check {
+      color: #282527; }
+      .contacts__form .check__box {
+        background-color: rgba(218, 227, 155, 0.6); }
+        .contacts__form .check__box_error {
+          background-color: rgba(251, 243, 243, 0.6); }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -633,7 +675,6 @@ main {
   width: 100%; }
   @media screen and (max-width: 1024px) {
     .video-bg {
-      position: absolute;
       top: 50%;
       left: 50%;
       width: auto;

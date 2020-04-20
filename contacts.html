@@ -144,9 +144,65 @@
                 </svg>
             </button>
         </header>
-
-        <main></main>
-
+        <main class="">
+            <video class="video-bg" preload="auto" autoplay="autoplay" loop="loop" muted="muted" poster="img/form-bg-1.jpg">
+                <source src="video/form-bg-1.webm" type="video/webm">
+                <source src="video/form-bg-1.mp4" type="video/mp4">
+            </video>
+            <section class="content contacts">
+                <h1>Контакты</h1>
+                <p class="text_bold">
+                    Компания INDIGA оказывает услуги по проектированию и монтажу системы автоматического полива.
+                </p>
+                <br>
+                <p>
+                    Вы можете задать нам свои вопросы письмом на адрес электронной почты, и наши специалисты с
+                    удовольствием на них ответят. Ваше письмо не останется без ответа.
+                </p>
+                <br>
+                <br>
+                <br>
+                <p class="text_big text_bold">г. Новосибирск</p>
+                <p class="text_big text_bold">+7-953-888-65-90</p>
+                <p class="text_big text_bold">+7-953-888-65-89</p>
+                <p>
+                    e-mail:
+                    <span class="text_bold">
+                        <a href="mailto:sales@avtopoliv.me">sales@avtopoliv.me</a>
+                    </span>
+                </p>
+                <p>
+                    <a href="">avtopoliv.me</a>
+                </p>
+                <br>
+                <br>
+                <br>
+                <p class="text_big text_bold">г. Барнаул</p>
+                <p class="text_big text_bold">+7-963-536-57-00</p>
+                <form class="form form_green contacts__form" name="" action="" method="post">
+                    <div class="form__row">
+                        <input class="form__input form_error" type="text" name="" value="" placeholder="Имя">
+                    </div>
+                    <div class="form__row">
+                        <input class="form__input" type="email" name="" value="" placeholder="Эл. почта">
+                        <input class="form__input" type="tel" name="" value="" placeholder="Телефон">
+                    </div>
+                    <textarea class="form__textarea" name="" placeholder="Добавьте сообщение..."></textarea>
+                    <div class="form__agree">
+                        <span>
+                            Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c
+                            <a href="privacy-policy.html">политикой конфиденциальности</a>
+                        </span>
+                        <label class="check">
+                            <input type="checkbox" name="agree" value="" class="check__input visually-hidden">
+                            <span class="check__box"></span>
+                            Да
+                        </label>
+                    </div>
+                    <button class="form__submit" name="">Отправить</button>
+                </form>
+            </section>
+        </main>
         <footer class="footer">
             <nav class="footer-nav">
                 <ul class="nav">

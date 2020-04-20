@@ -41,6 +41,8 @@ $Verdana: Verdana, Geneva, Arial, sans-serif;
 @import 'footer';
 
 main {
+  position: relative;
+  overflow: hidden;
   margin: 0;
   padding: 0 0 50px 0;
   background: url(../img/shadow.png) repeat-x 0 0 #95a712;
@@ -48,9 +50,19 @@ main {
   @include media(mobile) {
     padding: 0 0 0 0;
   }
+
+  .video-bg {
+    top: 50%;
+    left: 50%;
+    width: auto;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .content {
+  position: relative;
   margin: auto;
   padding: 75px 45px 100px 45px;
   max-width: 1000px;
@@ -171,6 +183,61 @@ main {
   }
 }
 
+.contacts {
+  background: rgba(255, 255, 255, 0.6);
+  font: normal normal normal 16px/1.3em $Verdana;
+  color: #535A0A;
+
+  h1 {
+    font: italic normal normal 34px/1.1em $Verdana;
+    color: #282527;
+  }
+
+  a {
+    color: #535A0A;
+    text-decoration: none;
+  }
+
+  &__form {
+    margin: 100px 40px 0 40px;
+
+    .form__input, .form__textarea {
+      background-color: rgba(218, 227, 155, 0.6);
+      color: rgb(83, 90, 10);
+
+      &::placeholder {
+        color: rgb(83, 90, 10);
+      }
+    }
+
+    .form_error {
+      background-color: rgba(251, 243, 243, 0.6);
+    }
+
+    .form__agree {
+      text-shadow: none;
+      color: #282527;
+
+      a {
+        color: #282527;
+        text-decoration: underline;
+      }
+    }
+
+    .check {
+      color: #282527;
+
+      &__box {
+        background-color: rgba(218, 227, 155, 0.6);
+
+        &_error {
+          background-color: rgba(251, 243, 243, 0.6);
+        }
+      }
+    }
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -211,7 +278,6 @@ main {
   width: 100%;
 
   @include media(tablet) {
-    position: absolute;
     top: 50%;
     left: 50%;
     width: auto;
