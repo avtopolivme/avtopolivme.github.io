@@ -31,6 +31,7 @@
         <meta property="og:type" content="website">
 
         <link href="css/vendor/jquery.fancybox.min.css" rel="stylesheet">
+        <link href="css/vendor/animate.min.css" rel="stylesheet">
         <link href="slick/slick.css" rel="stylesheet">
         <link href="slick/slick-theme.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
@@ -146,9 +147,41 @@
                 </svg>
             </button>
         </header>
-
-        <main></main>
-
+        <main>
+            <section class="autowatering">
+                <section class="autowatering-slider js-autowatering-slider">
+                    <div class="autowatering-slider__slide">
+                        <div class="autowatering-slider__image">
+                            <img src="img/autowatering/1.webp" alt="">
+                        </div>
+                        <div class="autowatering-slider__content">
+                            <h2 class="animated" data-animation-in="fadeInUp">Автополив!</h2>
+                            <p class="animated_left animated" data-animation-in="fadeInLeft" data-delay-in="0.5">Красивый сад!</p>
+                            <p class="animated_right animated" data-animation-in="fadeInRight" data-delay-in="1">Лёгкий уход!</p>
+                        </div>
+                    </div>
+                    <div class="autowatering-slider__slide">
+                        <div class="autowatering-slider__image">
+                            <img src="img/articles/5.jpg" alt="">
+                        </div>
+                        <div class="autowatering-slider__content">
+                            <h2 class="animated" data-animation-in="fadeInUp">Вы отдыхаете...</h2>
+                            <p class="animated_left animated" data-animation-in="fadeInLeft" data-delay-in="0.5">Поливает система</p>
+                        </div>
+                    </div>
+                    <div class="autowatering-slider__slide">
+                        <div class="autowatering-slider__image">
+                            <img src="img/autowatering/1.webp" alt="">
+                        </div>
+                        <div class="autowatering-slider__content">
+                            <h2 class="animated" data-animation-in="fadeInUp">Сад легкого ухода</h2>
+                            <p class="animated_left animated" data-animation-in="fadeInLeft" data-delay-in="0.5">С системой</p>
+                            <p class="animated_right animated" data-animation-in="fadeInRight" data-delay-in="1">автоматического полива</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
         <footer class="footer footer_green">
             <section class="footer__content">
                 <video class="video-bg" preload="auto" autoplay="autoplay" loop="loop" muted="muted" poster="img/form-bg-2.jpg">
@@ -256,6 +289,7 @@
         <script src="js/vendor/jquery-3.5.0.min.js"></script>
         <script src="js/vendor/jsrender.min.js"></script>
         <script src="js/vendor/jquery.fancybox.min.js"></script>
+        <script src="js/vendor/slick-animation.min.js"></script>
         <script src="slick/slick.min.js"></script>
         <script src="js/script.js"></script>
     </body>

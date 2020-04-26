@@ -23,6 +23,16 @@
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/FuturaLT-Book.eot") format("eot"), url("../fonts/FuturaLT-Book.woff") format("woff"), url("../fonts/FuturaLT-Book.ttf") format("truetype"); }
+@font-face {
+  font-family: "georgia";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Georgia.eot") format("eot"), url("../fonts/Georgia.woff") format("woff"), url("../fonts/Georgia.ttf") format("truetype"); }
+@font-face {
+  font-family: "marck script";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/MarckScript-Regular.eot") format("eot"), url("../fonts/MarckScript-Regular.woff") format("woff"), url("../fonts/MarckScript-Regular.ttf") format("truetype"); }
 /*
  * https://hankchizljaw.com/wrote/a-modern-css-reset/
  */
@@ -387,7 +397,7 @@ select {
 .header-nav__text, .header-nav__link {
   padding: 0 15px;
   text-align: center;
-  font: normal normal normal 13px/24px futura-lt-w01-book, Arial, sans-serif;
+  font: normal normal normal 13px/24px Futura-LT-W01-Book, Arial, sans-serif;
   color: #696969; }
   .header-nav__text:hover, .header-nav__link:hover {
     color: #000000; }
@@ -954,7 +964,7 @@ main {
   .mainpage-advantages__text {
     margin: 30px 7px 10px 7px;
     padding: 0;
-    font-family: georgia, palatino, book antiqua, palatino linotype, serif;
+    font: italic normal normal 14px/1.5em georgia, palatino, book antiqua, palatino linotype, serif;
     letter-spacing: 0.05em;
     text-shadow: 1px 1px 2px black; }
     .mainpage-advantages__text a {
@@ -1050,6 +1060,111 @@ main {
   @media screen and (max-width: 767px) {
     .portfolio-slider {
       width: 360px; } }
+
+.autowatering .slick-dotted.slick-slider {
+  margin: 0; }
+
+.autowatering-slider {
+  background: #DAE39B; }
+  .autowatering-slider__slide {
+    height: 565px; }
+  .autowatering-slider__image {
+    height: 565px;
+    overflow: hidden; }
+    .autowatering-slider__image img {
+      width: 100%;
+      min-width: 100%;
+      min-height: 100%; }
+  .autowatering-slider__content {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    min-width: 1000px;
+    font: normal normal normal 60px/1em "marck script", cursive;
+    color: #F7F5E1;
+    text-align: center;
+    text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.6) -1px -1px 1px; }
+    .autowatering-slider__content h2 {
+      margin: 150px 0 0 0;
+      width: 100%;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 100px; }
+    .autowatering-slider__content .animated {
+      transition: all .5s ease; }
+    .autowatering-slider__content .animated_left {
+      margin: 100px 0 0 -370px; }
+    .autowatering-slider__content .animated_right {
+      margin: 20px 0 0 270px; }
+    .autowatering-slider__content [data-animation-in] {
+      opacity: 0;
+      animation-duration: 1.5s;
+      transition: opacity 0.5s ease 0.3s; }
+  .autowatering-slider .slick-arrow {
+    z-index: 1001; }
+    .autowatering-slider .slick-arrow::before {
+      color: #DAE39B;
+      font-size: 40px; }
+  .autowatering-slider .slick-prev {
+    left: 80px; }
+  .autowatering-slider .slick-next {
+    right: 100px; }
+  .autowatering-slider .slick-dots {
+    bottom: 20px; }
+    .autowatering-slider .slick-dots li button:before {
+      color: #DAE39B;
+      font-size: 10px;
+      opacity: 0.75; }
+    .autowatering-slider .slick-dots li.slick-active button:before {
+      opacity: 1; }
+  @media screen and (max-width: 1024px) {
+    .autowatering-slider__slide {
+      position: relative;
+      height: 316px; }
+    .autowatering-slider__image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: auto;
+      height: 316px;
+      min-width: 100%;
+      min-height: 100%;
+      transform: translate(-50%, -50%); }
+      .autowatering-slider__image img {
+        max-width: none; }
+    .autowatering-slider__content {
+      min-width: 700px;
+      font: normal normal normal 40px/1em "marck script", cursive; }
+      .autowatering-slider__content h2 {
+        margin: 80px 0 0 0;
+        font-size: 70px; }
+      .autowatering-slider__content .animated_left {
+        margin: 40px 0 0 -250px; }
+      .autowatering-slider__content .animated_right {
+        margin: 20px 0 0 230px; } }
+  @media screen and (max-width: 767px) {
+    .autowatering-slider__content {
+      min-width: 700px;
+      font: normal normal normal 30px/1em "marck script", cursive; }
+      .autowatering-slider__content h2 {
+        margin: 70px 0 0 0;
+        font-size: 60px; }
+      .autowatering-slider__content .animated_left {
+        margin: 40px 0 0 0; }
+      .autowatering-slider__content .animated_right {
+        margin: 20px 0 0 0; } }
+  @media screen and (max-width: 480px) {
+    .autowatering-slider__content {
+      min-width: 450px;
+      font: normal normal normal 30px/1em "marck script", cursive; }
+      .autowatering-slider__content h2 {
+        margin: 70px 0 0 0;
+        font-size: 40px; }
+      .autowatering-slider__content .animated_left {
+        margin: 40px 0 0 0; }
+      .autowatering-slider__content .animated_right {
+        margin: 20px 0 0 0; } }
 
 .visually-hidden {
   position: absolute;

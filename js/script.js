@@ -23,6 +23,29 @@ $(document).ready(function()
     ]
   });
 
+  $('.js-autowatering-slider').slick({
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    arrows: true,
+    dots: true,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    speed: 1000,
+    centerMode: true,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          arrows: false,
+        }
+      },
+    ]
+  }).slickAnimation();
+
   $(document).on('click', '.js-burger', function(e)
   {
     $(this).hide();
