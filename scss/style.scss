@@ -724,14 +724,23 @@ main {
     }
   }
 
-  &__slider {
-    width: 1120px;
-    margin: 0 auto 0 auto;
-    padding: 0;
-
-    .slick-arrow::before {
-      color: #535A0A;
+  @include media(mobile) {
+    &__form {
+      h3 {
+        margin: 0 10px 20px 10px;
+        font-size: 20px;
+      }
     }
+  }
+}
+
+.portfolio-slider {
+  width: 1120px;
+  margin: 0 auto 0 auto;
+  padding: 0;
+
+  .slick-arrow::before {
+    color: #535A0A;
   }
 
   &__image {
@@ -770,22 +779,11 @@ main {
   }
 
   @include media(tablet) {
-    &__slider {
-      width: 740px;
-    }
+    width: 740px;
   }
 
   @include media(mobile) {
-    &__form {
-      h3 {
-        margin: 0 10px 20px 10px;
-        font-size: 20px;
-      }
-    }
-
-    &__slider {
-      width: 360px;
-    }
+    width: 360px;
   }
 }
 
