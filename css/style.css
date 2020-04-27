@@ -181,7 +181,7 @@ select {
 .check {
   display: block;
   padding: 0 0 0 20px;
-  font: normal normal normal 12px/16px Verdana, Geneva, Arial, sans-serif;
+  font: normal normal normal 12px/16px Verdana, sans-serif;
   color: black; }
   .check__box {
     position: absolute;
@@ -217,7 +217,7 @@ select {
     height: 42px;
     background-color: white;
     border: 1px solid black;
-    font: normal normal normal 12px/16px Verdana, Geneva, Arial, sans-serif;
+    font: normal normal normal 12px/16px Verdana, sans-serif;
     color: black; }
     .form__input::placeholder, .form__textarea::placeholder {
       color: black; }
@@ -247,7 +247,7 @@ select {
     width: 140px;
     background-color: #7e7a7d;
     border: none;
-    font: normal normal normal 12px/16px Verdana, Geneva, Arial, sans-serif;
+    font: normal normal normal 12px/16px Verdana, sans-serif;
     color: white;
     cursor: pointer;
     transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s; }
@@ -256,7 +256,7 @@ select {
   .form__agree {
     width: 290px;
     margin: 0 0 10px 0;
-    font: normal normal normal 12px/16px Verdana, Geneva, Arial, sans-serif;
+    font: normal normal normal 12px/16px Verdana, sans-serif;
     color: black; }
     .form__agree a {
       color: black; }
@@ -397,7 +397,7 @@ select {
 .header-nav__text, .header-nav__link {
   padding: 0 15px;
   text-align: center;
-  font: normal normal normal 13px/24px Futura-LT-W01-Book, Arial, sans-serif;
+  font: normal normal normal 13px/24px Futura-LT-W01-Book, sans-serif;
   color: #696969; }
   .header-nav__text:hover, .header-nav__link:hover {
     color: #000000; }
@@ -436,7 +436,7 @@ select {
     color: #252A04; }
   .mobile-nav__text, .mobile-nav__link {
     padding: 16px 0 16px 16px;
-    font: normal normal normal 16px/24px "Open Sans", Arial, sans-serif; }
+    font: normal normal normal 16px/24px "Open Sans", sans-serif; }
     .mobile-nav__text:hover, .mobile-nav__text:focus, .mobile-nav__link:hover, .mobile-nav__link:focus {
       color: #000000; }
 
@@ -451,7 +451,7 @@ select {
   .footer__title {
     margin: 30px 0 30px 0;
     text-align: center;
-    font: normal normal bold 23px/30px "Open Sans", Arial, sans-serif;
+    font: normal normal bold 23px/30px "Open Sans", sans-serif;
     color: #20303C;
     z-index: 1; }
     @media screen and (max-width: 767px) {
@@ -475,10 +475,10 @@ select {
     border-radius: 5px;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.6);
     border: 1px solid #10a4e3;
-    font: normal normal normal 16px/20px "Open Sans", Arial, sans-serif;
+    font: normal normal normal 16px/20px "Open Sans", sans-serif;
     color: #20303C; }
     .footer__contacts h4 {
-      font: normal normal normal 16px/20px "Open Sans", Arial, sans-serif; }
+      font: normal normal normal 16px/20px "Open Sans", sans-serif; }
     .footer__contacts p {
       margin-left: 8px; }
     .footer__contacts a {
@@ -520,7 +520,7 @@ select {
     color: #282527; }
   .footer-nav__text, .footer-nav__link {
     padding: 0 15px 0 15px;
-    font: normal normal normal 12px/24px "Open Sans", Arial, sans-serif; }
+    font: normal normal normal 12px/24px "Open Sans", sans-serif; }
     .footer-nav__text:hover, .footer-nav__text:focus, .footer-nav__link:hover, .footer-nav__link:focus {
       color: #95A712; }
   @media screen and (max-width: 767px) {
@@ -565,7 +565,7 @@ main {
   padding: 75px 45px 100px 45px;
   max-width: 1000px;
   background: url(../img/shadow.png) repeat-x 0 0 white;
-  font: italic normal normal 12px/15px "Open Sans", Arial, sans-serif;
+  font: italic normal normal 12px/15px "Open Sans", sans-serif;
   color: #282527; }
   @media screen and (max-width: 767px) {
     .content {
@@ -596,7 +596,7 @@ main {
         margin: 0; } }
 
 .breadcrumbs {
-  font: normal normal normal 12px/16px Verdana, Geneva, Arial, sans-serif;
+  font: normal normal normal 12px/16px Verdana, sans-serif;
   margin: 0 0 10px 0; }
   .breadcrumbs ul {
     list-style: none;
@@ -613,7 +613,7 @@ main {
   flex-direction: column;
   margin: -30px 0 -30px 0;
   padding: 0;
-  font: normal normal normal 12px/16px Verdana, Geneva, Arial, sans-serif; }
+  font: normal normal normal 12px/16px Verdana, sans-serif; }
   .reviews__item {
     display: flex;
     align-items: flex-start;
@@ -659,10 +659,10 @@ main {
 
 .contacts {
   background: rgba(255, 255, 255, 0.6);
-  font: normal normal normal 16px/1.3em Verdana, Geneva, Arial, sans-serif;
+  font: normal normal normal 16px/1.3em Verdana, sans-serif;
   color: #535A0A; }
   .contacts h1 {
-    font: italic normal normal 34px/1.1em Verdana, Geneva, Arial, sans-serif;
+    font: italic normal normal 34px/1.1em Verdana, sans-serif;
     color: #282527; }
   .contacts a {
     color: #535A0A;
@@ -698,7 +698,7 @@ main {
   margin: 0;
   padding: 0;
   background: url(../img/shadow.png) repeat-x 0 0 white;
-  font: normal normal normal 14px/1.3em "Open Sans", Arial, sans-serif;
+  font: normal normal normal 14px/1.3em "Open Sans", sans-serif;
   color: #282527; }
   .articles h2 {
     margin: 0 55px 50px 55px;
@@ -755,9 +755,9 @@ main {
 
 .article {
   padding: 75px 15% 100px 15%;
-  font: normal normal normal 14px/1.3em Verdana, Geneva, Arial, sans-serif; }
+  font: normal normal normal 14px/1.3em Verdana, sans-serif; }
   .article h1 {
-    font: normal normal normal 34px/1.3em "Open Sans", Arial, sans-serif;
+    font: normal normal normal 34px/1.3em "Open Sans", sans-serif;
     color: #535A0A; }
     @media screen and (max-width: 767px) {
       .article h1 {
@@ -779,7 +779,7 @@ main {
   margin: 0 -15px 0px -15px;
   padding: 50px 0 100px 0;
   background: url(../img/shadow.png) repeat-x 0 0, url(../img/grass.png) left bottom repeat-x #dae39b;
-  font: normal normal normal 18px/1.3em "Open Sans", Arial, sans-serif;
+  font: normal normal normal 18px/1.3em "Open Sans", sans-serif;
   color: #252A04;
   text-align: center; }
   .mainpage-nav a {
@@ -814,7 +814,7 @@ main {
   margin: 0;
   padding: 20px 15% 20px 15%;
   background: url(../img/shadow.png) repeat-x 0 0 #FAFAFA;
-  font: normal normal normal 16px/1.3em "Open Sans", Arial, sans-serif;
+  font: normal normal normal 16px/1.3em "Open Sans", sans-serif;
   color: #535A0A; }
   .mainpage-text a {
     font-weight: bold;
@@ -827,7 +827,7 @@ main {
   margin: 0;
   padding: 5px 15% 5px 15%;
   background: url(../img/shadow.png) repeat-x 0 0 #dae39b;
-  font: normal normal normal 12px/1.3em Verdana, Geneva, Arial, sans-serif;
+  font: normal normal normal 12px/1.3em Verdana, sans-serif;
   color: #282527; }
   .mainpage-news__container {
     display: flex;
@@ -841,7 +841,7 @@ main {
   .mainpage-news__title {
     margin: 0;
     padding: 20px 0 40px 0;
-    font: italic bold normal 24px/1.1em "Open Sans", Arial, sans-serif;
+    font: italic bold normal 24px/1.1em "Open Sans", sans-serif;
     color: #535A0A;
     text-align: center; }
     .mainpage-news__title a {
@@ -869,7 +869,7 @@ main {
     margin: 0 0 0 35px;
     padding: 0; }
     .mainpage-news__row h3 {
-      font: normal normal normal 18px/1.3em "Open Sans", Arial, sans-serif;
+      font: normal normal normal 18px/1.3em "Open Sans", sans-serif;
       color: #535A0A; }
   .mainpage-news__label {
     color: #535A0A; }
@@ -887,7 +887,7 @@ main {
     border: solid #95a712 3px;
     border-radius: 5px;
     transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
-    font: normal normal normal 19px/1.4em "Open Sans", Arial, sans-serif;
+    font: normal normal normal 19px/1.4em "Open Sans", sans-serif;
     color: #FFFFFF;
     text-decoration: none;
     text-align: center; }
@@ -924,13 +924,13 @@ main {
   justify-content: space-between;
   padding: 35px 15% 25px 15%;
   background: #dae39b;
-  font: italic normal normal 14px/1.5em Verdana, Geneva, Arial, sans-serif;
+  font: italic normal normal 14px/1.5em Verdana, sans-serif;
   color: #FFFFFF; }
   .mainpage-advantages__title {
     margin: 0 0 10px 0;
     padding: 0;
     width: 100%;
-    font: italic bold normal 24px/1.1em "Open Sans", Arial, sans-serif;
+    font: italic bold normal 24px/1.1em "Open Sans", sans-serif;
     color: #535A0A;
     text-align: center; }
   .mainpage-advantages__item {
@@ -950,7 +950,7 @@ main {
       background: #95a712; }
     .mainpage-advantages__item h3 {
       min-height: 40px;
-      font: normal normal normal 15px/1.3em Verdana, Geneva, Arial, sans-serif;
+      font: normal normal normal 15px/1.3em Verdana, sans-serif;
       color: #DAE39B;
       text-align: center; }
   .mainpage-advantages__image {
@@ -964,7 +964,7 @@ main {
   .mainpage-advantages__text {
     margin: 30px 7px 10px 7px;
     padding: 0;
-    font: italic normal normal 14px/1.5em georgia, palatino, book antiqua, palatino linotype, serif;
+    font: italic normal normal 14px/1.5em georgia, sans-serif;
     letter-spacing: 0.05em;
     text-shadow: 1px 1px 2px black; }
     .mainpage-advantages__text a {
@@ -985,7 +985,7 @@ main {
   margin: 0;
   padding: 0 0 50px 0;
   background: url(../img/shadow.png) repeat-x 0 0 white;
-  font: italic normal normal 14px/1.1em "Open Sans", Arial, sans-serif;
+  font: italic normal normal 14px/1.1em "Open Sans", sans-serif;
   color: #535A0A; }
   .portfolio h1 {
     margin: 0;
@@ -1013,7 +1013,7 @@ main {
       margin: 0 0 20px 0;
       padding: 0;
       width: 100%;
-      font: normal bold normal 23px/1.3em "Open Sans", Arial, sans-serif;
+      font: normal bold normal 23px/1.3em "Open Sans", sans-serif;
       color: #481E0E;
       text-align: center; }
     .portfolio__form_green h3 {
@@ -1160,6 +1160,58 @@ main {
       .slider__content h2 {
         font-size: 40px; } }
 
+.autowatering {
+  background: #DAE39B; }
+  .autowatering__text {
+    margin: 0;
+    padding: 30px 15% 20px 15%;
+    font: normal normal normal 16px/1.3em Verdana, sans-serif;
+    color: #000000; }
+    .autowatering__text a {
+      color: #000000; }
+    @media screen and (max-width: 767px) {
+      .autowatering__text {
+        padding: 30px 30px 20px 30px; } }
+  .autowatering__types, .autowatering__features, .autowatering__reviews, .autowatering__projects {
+    margin: 0;
+    padding: 30px 15% 20px 15%;
+    font: normal normal normal 16px/1.3em Verdana, sans-serif;
+    color: #282527; }
+    .autowatering__types a, .autowatering__features a, .autowatering__reviews a, .autowatering__projects a {
+      color: #282527; }
+    .autowatering__types h2, .autowatering__features h2, .autowatering__reviews h2, .autowatering__projects h2 {
+      padding: 0 0 10px 0;
+      font: italic bold normal 24px/1.1em 'Open Sans',sans-serif;
+      color: #535A0A;
+      text-align: center; }
+    @media screen and (max-width: 767px) {
+      .autowatering__types, .autowatering__features, .autowatering__reviews, .autowatering__projects {
+        padding: 30px 30px 20px 30px; } }
+  .autowatering__video {
+    display: flex;
+    margin: 0;
+    padding: 70px 0 70px 0;
+    background: #FFFFFF; }
+    .autowatering__video iframe {
+      margin: 0 auto 0 auto;
+      padding: 0;
+      width: 1000px;
+      height: 580px; }
+    @media screen and (max-width: 1024px) {
+      .autowatering__video iframe {
+        width: 750px;
+        height: 420px; } }
+    @media screen and (max-width: 767px) {
+      .autowatering__video {
+        padding: 0; }
+        .autowatering__video iframe {
+          width: 100%;
+          height: 380px; } }
+    @media screen and (max-width: 480px) {
+      .autowatering__video iframe {
+        width: 100%;
+        height: 200px; } }
+
 .fog__slider {
   background: #FFFFFF; }
   .fog__slider .slider__slide {
@@ -1208,6 +1260,28 @@ main {
       min-width: 450px; }
       .fog__slider .slider__content h2 {
         font-size: 40px; } }
+
+.controllers {
+  padding: 2px 0 0 0;
+  background: url(../img/shadow.png) repeat-x 0 0 white; }
+  .controllers .slick-dotted.slick-slider {
+    margin: 0 auto 0 auto; }
+  .controllers__slider {
+    margin: 0 auto 0 auto;
+    width: 980px;
+    background: #FFFFFF; }
+    .controllers__slider .slider__slide {
+      height: 341px; }
+    .controllers__slider .slider__image {
+      height: 341px; }
+    .controllers__slider .slick-arrow::before {
+      color: #FFFFFF; }
+    .controllers__slider .slick-prev {
+      left: 30px; }
+    .controllers__slider .slick-next {
+      right: 50px; }
+    .controllers__slider .slick-dots li button:before {
+      color: #FFFFFF; }
 
 .visually-hidden {
   position: absolute;
