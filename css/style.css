@@ -1061,21 +1061,21 @@ main {
     .portfolio-slider {
       width: 360px; } }
 
-.autowatering .slick-dotted.slick-slider {
+.autowatering .slick-dotted.slick-slider, .fog .slick-dotted.slick-slider {
   margin: 0; }
 
-.autowatering-slider {
+.slider {
   background: #DAE39B; }
-  .autowatering-slider__slide {
+  .slider__slide {
     height: 565px; }
-  .autowatering-slider__image {
+  .slider__image {
     height: 565px;
     overflow: hidden; }
-    .autowatering-slider__image img {
+    .slider__image img {
       width: 100%;
       min-width: 100%;
       min-height: 100%; }
-  .autowatering-slider__content {
+  .slider__content {
     position: absolute;
     top: 0;
     left: 50%;
@@ -1085,44 +1085,44 @@ main {
     color: #F7F5E1;
     text-align: center;
     text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.6) -1px -1px 1px; }
-    .autowatering-slider__content h2 {
+    .slider__content h2 {
       margin: 150px 0 0 0;
       width: 100%;
       font-style: italic;
       font-weight: normal;
       font-size: 100px; }
-    .autowatering-slider__content .animated {
+    .slider__content .animated {
       transition: all .5s ease; }
-    .autowatering-slider__content .animated_left {
+    .slider__content .animated_left {
       margin: 100px 0 0 -370px; }
-    .autowatering-slider__content .animated_right {
+    .slider__content .animated_right {
       margin: 20px 0 0 270px; }
-    .autowatering-slider__content [data-animation-in] {
+    .slider__content [data-animation-in] {
       opacity: 0;
       animation-duration: 1.5s;
       transition: opacity 0.5s ease 0.3s; }
-  .autowatering-slider .slick-arrow {
+  .slider .slick-arrow {
     z-index: 1001; }
-    .autowatering-slider .slick-arrow::before {
+    .slider .slick-arrow::before {
       color: #DAE39B;
       font-size: 40px; }
-  .autowatering-slider .slick-prev {
+  .slider .slick-prev {
     left: 80px; }
-  .autowatering-slider .slick-next {
+  .slider .slick-next {
     right: 100px; }
-  .autowatering-slider .slick-dots {
+  .slider .slick-dots {
     bottom: 20px; }
-    .autowatering-slider .slick-dots li button:before {
+    .slider .slick-dots li button:before {
       color: #DAE39B;
       font-size: 10px;
       opacity: 0.75; }
-    .autowatering-slider .slick-dots li.slick-active button:before {
+    .slider .slick-dots li.slick-active button:before {
       opacity: 1; }
   @media screen and (max-width: 1024px) {
-    .autowatering-slider__slide {
+    .slider__slide {
       position: relative;
       height: 316px; }
-    .autowatering-slider__image {
+    .slider__image {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -1131,40 +1131,83 @@ main {
       min-width: 100%;
       min-height: 100%;
       transform: translate(-50%, -50%); }
-      .autowatering-slider__image img {
+      .slider__image img {
         max-width: none; }
-    .autowatering-slider__content {
+    .slider__content {
       min-width: 700px;
-      font: normal normal normal 40px/1em "marck script", cursive; }
-      .autowatering-slider__content h2 {
+      font-size: 40px; }
+      .slider__content h2 {
         margin: 80px 0 0 0;
         font-size: 70px; }
-      .autowatering-slider__content .animated_left {
+      .slider__content .animated_left {
         margin: 40px 0 0 -250px; }
-      .autowatering-slider__content .animated_right {
+      .slider__content .animated_right {
         margin: 20px 0 0 230px; } }
   @media screen and (max-width: 767px) {
-    .autowatering-slider__content {
+    .slider__content {
       min-width: 700px;
-      font: normal normal normal 30px/1em "marck script", cursive; }
-      .autowatering-slider__content h2 {
+      font-size: 30px; }
+      .slider__content h2 {
         margin: 70px 0 0 0;
         font-size: 60px; }
-      .autowatering-slider__content .animated_left {
+      .slider__content .animated_left {
         margin: 40px 0 0 0; }
-      .autowatering-slider__content .animated_right {
+      .slider__content .animated_right {
         margin: 20px 0 0 0; } }
   @media screen and (max-width: 480px) {
-    .autowatering-slider__content {
-      min-width: 450px;
-      font: normal normal normal 30px/1em "marck script", cursive; }
-      .autowatering-slider__content h2 {
-        margin: 70px 0 0 0;
-        font-size: 40px; }
-      .autowatering-slider__content .animated_left {
+    .slider__content {
+      min-width: 450px; }
+      .slider__content h2 {
+        font-size: 40px; } }
+
+.fog__slider {
+  background: #FFFFFF; }
+  .fog__slider .slider__slide {
+    height: 402px; }
+  .fog__slider .slider__image {
+    height: 402px; }
+  .fog__slider .slider__content {
+    font: normal normal normal 50px/1em "marck script", cursive; }
+    .fog__slider .slider__content h2 {
+      margin: 100px 0 0 0;
+      font-size: 60px; }
+    .fog__slider .slider__content .animated_left {
+      margin: 50px 0 0 -370px; }
+    .fog__slider .slider__content .animated_right {
+      margin: 20px 0 0 270px; }
+  .fog__slider .slick-arrow::before {
+    color: #FFFFFF; }
+  .fog__slider .slick-dots li button:before {
+    color: #FFFFFF; }
+  @media screen and (max-width: 1024px) {
+    .fog__slider .slider__slide {
+      height: 316px; }
+    .fog__slider .slider__image {
+      height: 316px; }
+    .fog__slider .slider__content {
+      min-width: 700px;
+      font-size: 30px; }
+      .fog__slider .slider__content h2 {
+        margin: 80px 0 0 0;
+        font-size: 50px; }
+      .fog__slider .slider__content .animated_left {
+        margin: 50px 0 0 -250px; }
+      .fog__slider .slider__content .animated_right {
+        margin: 20px 0 0 230px; } }
+  @media screen and (max-width: 767px) {
+    .fog__slider .slider__content {
+      min-width: 700px; }
+      .fog__slider .slider__content h2 {
+        margin: 70px 0 0 0; }
+      .fog__slider .slider__content .animated_left {
         margin: 40px 0 0 0; }
-      .autowatering-slider__content .animated_right {
+      .fog__slider .slider__content .animated_right {
         margin: 20px 0 0 0; } }
+  @media screen and (max-width: 480px) {
+    .fog__slider .slider__content {
+      min-width: 450px; }
+      .fog__slider .slider__content h2 {
+        font-size: 40px; } }
 
 .visually-hidden {
   position: absolute;

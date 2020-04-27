@@ -789,13 +789,13 @@ main {
   }
 }
 
-.autowatering {
+.autowatering, .fog {
   .slick-dotted.slick-slider {
     margin: 0;
   }
 }
 
-.autowatering-slider {
+.slider {
   background: #DAE39B;
 
   &__slide {
@@ -905,7 +905,7 @@ main {
 
     &__content {
       min-width: 700px;
-      font: normal normal normal 40px/1em $Marck;
+      font-size: 40px;
 
       h2 {
         margin: 80px 0 0 0;
@@ -925,7 +925,7 @@ main {
   @include media(mobile) {
     &__content {
       min-width: 700px;
-      font: normal normal normal 30px/1em $Marck;
+      font-size: 30px;
 
       h2 {
         margin: 70px 0 0 0;
@@ -945,11 +945,88 @@ main {
   @include media(phone) {
     &__content {
       min-width: 450px;
-      font: normal normal normal 30px/1em $Marck;
+
+      h2 {
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+.fog__slider {
+  background: #FFFFFF;
+
+  .slider__slide {
+    height: 402px;
+  }
+
+  .slider__image {
+    height: 402px;
+  }
+
+  .slider__content {
+    font: normal normal normal 50px/1em $Marck;
+
+    h2 {
+      margin: 100px 0 0 0;
+      font-size: 60px;
+    }
+
+    .animated_left {
+      margin: 50px 0 0 -370px;
+    }
+
+    .animated_right {
+      margin: 20px 0 0 270px;
+    }
+  }
+
+  .slick-arrow {
+    &::before {
+      color: #FFFFFF;
+    }
+  }
+
+  .slick-dots {
+    li button:before {
+      color: #FFFFFF;
+    }
+  }
+
+  @include media(tablet) {
+    .slider__slide {
+      height: 316px;
+    }
+
+    .slider__image {
+      height: 316px;
+    }
+
+    .slider__content {
+      min-width: 700px;
+      font-size: 30px;
+
+      h2 {
+        margin: 80px 0 0 0;
+        font-size: 50px;
+      }
+
+      .animated_left {
+        margin: 50px 0 0 -250px;
+      }
+
+      .animated_right {
+        margin: 20px 0 0 230px;
+      }
+    }
+  }
+
+  @include media(mobile) {
+    .slider__content {
+      min-width: 700px;
 
       h2 {
         margin: 70px 0 0 0;
-        font-size: 40px;
       }
 
       .animated_left {
@@ -962,6 +1039,15 @@ main {
     }
   }
 
+  @include media(phone) {
+    .slider__content {
+      min-width: 450px;
+
+      h2 {
+        font-size: 40px;
+      }
+    }
+  }
 }
 
 .visually-hidden {
