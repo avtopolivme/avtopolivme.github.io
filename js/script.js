@@ -108,6 +108,34 @@ $(document).ready(function()
     ],
   });
 
+  $('.js-projects-slider').slick({
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    arrows: true,
+    dots: false,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          arrows: false,
+          dots: true,
+          slidesToShow: 1,
+        }
+      },
+    ]
+  });
+
   $(document).on('click', '.js-burger', function(e)
   {
     $(this).hide();
