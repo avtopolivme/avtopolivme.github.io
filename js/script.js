@@ -92,6 +92,22 @@ $(document).ready(function()
     ]
   }).slickAnimation();
 
+  $('.js-reviews-slider').slick({
+    infinite: true,
+    arrows: true,
+    dots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1100,
+        settings: {
+          arrows: false,
+        }
+      },
+    ],
+  });
+
   $(document).on('click', '.js-burger', function(e)
   {
     $(this).hide();
