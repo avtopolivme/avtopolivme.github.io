@@ -34,6 +34,12 @@
         max-width: none;
       }
     }
+
+    @include media(mobile) {
+      img {
+        width: auto;
+      }
+    }
   }
 
   &__content {

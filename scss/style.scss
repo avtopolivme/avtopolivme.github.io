@@ -974,7 +974,356 @@ main {
 }
 
 .fog {
+  background: #FFFFFF;
 
+  &__text {
+    margin: 0;
+    padding: 30px 10% 20px 10%;
+    font: normal normal normal 16px/1.3em $Verdana;
+    color: #000000;
+
+    a {
+      color: #000000;
+    }
+
+    h2 {
+      padding: 0 0 10px 0;
+      font: italic bold normal 24px/1.1em $Sans;
+      color: #324158;
+      text-align: center;
+    }
+
+    @include media(desktop) {
+      padding: 30px 20% 20px 20%;
+    }
+
+    @include media(tablet) {
+      padding: 30px 5% 20px 5%;
+    }
+
+    @include media(mobile) {
+      padding: 30px 30px 20px 30px;
+    }
+  }
+}
+
+.fog-functions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 -30px 0 -30px;
+  text-align: center;
+
+  &__item {
+    margin: 0 30px 30px 30px;
+    padding: 15px 0 20px 0;
+    width: 280px;
+    background: url(../img/functions-1.png) repeat 0 0 #256578;
+
+    &:nth-child(6n-4) {
+      background: #324158;
+    }
+
+    &:nth-child(6n-3) {
+      background: url(../img/functions-2.png) no-repeat 0 0 #85B354;
+      background-size: cover;
+    }
+
+    &:nth-child(6n-2) {
+      background: #535a0a;
+    }
+
+    &:nth-child(6n-1) {
+      background: url(../img/functions-1.png) repeat 0 0 #256578;
+    }
+
+    &:nth-child(6n) {
+      background: #20303c;
+    }
+  }
+
+  &__title {
+    min-height: 56px;
+    font: italic normal normal 21px/1.1em $Sans;
+    color: #FFFFFF;
+  }
+
+  &__image {
+    margin: 0 auto 0 auto;
+    width: 277px;
+    height: 325px;
+
+    img {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__text {
+    padding: 10px 10px 0 10px;
+    font: normal normal normal 12px/1.3em $Verdana;
+    color: #FCFCFC;
+  }
+
+  &__text-big {
+    padding: 20px 10px 0 10px;
+    font: normal normal normal 14px/1.3em $Sans;
+    color: #F7F5E1;
+  }
+}
+
+.fog-areas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 -5px 20px -5px;
+
+    &:nth-child(7n-5) {
+      .fog-areas__center {
+        background: #534f52;
+
+        .fog-areas__icon {
+          svg {
+            fill: #FFFFFF;
+          }
+        }
+      }
+
+      .fog-areas__right {
+        background: url(../img/areas-2.png) no-repeat 0 0 #85B354;
+        background-size: cover;
+
+        .fog-areas__icon {
+          svg {
+            fill: #FFFFFF;
+          }
+        }
+      }
+
+      .fog-areas__text {
+        color: #FFFFFF;
+      }
+    }
+
+    &:nth-child(7n-4) {
+      .fog-areas__center {
+        background: url(../img/functions-1.png) repeat 0 0 #256578;
+
+        .fog-areas__icon {
+          svg {
+            fill: #D7F3F5;
+          }
+        }
+
+        .fog-areas__text {
+          color: #F7F5E1;
+        }
+      }
+
+      .fog-areas__right {
+        background: #d7f3f5;
+
+        .fog-areas__icon {
+          svg {
+            fill: #324158;
+          }
+        }
+      }
+    }
+
+    &:nth-child(7n-3) {
+      .fog-areas__center {
+        background: #d4d0d3;
+
+        .fog-areas__icon {
+          svg {
+            fill: #481E0E;
+          }
+        }
+      }
+
+      .fog-areas__right {
+        background: #b8bbd1;
+
+        .fog-areas__icon {
+          svg {
+            fill: #903D1C;
+          }
+        }
+      }
+    }
+
+    &:nth-child(7n-2) {
+      .fog-areas__center {
+        background: #a9a5a8;
+
+        .fog-areas__icon {
+          svg {
+            fill: #F3EEE1;
+          }
+        }
+      }
+
+      .fog-areas__right {
+        .fog-areas__icon {
+          svg {
+            fill: #282410;
+          }
+        }
+      }
+    }
+
+    &:nth-child(7n-1) {
+      .fog-areas__center {
+        background: #778199;
+
+        .fog-areas__icon {
+          svg {
+            fill: #FFFFFF;
+          }
+        }
+
+        .fog-areas__text {
+          color: #FFFFFF;
+        }
+      }
+
+      .fog-areas__right {
+        background: #e8dfc5;
+
+        .fog-areas__icon {
+          svg {
+            fill: #535A0A;
+          }
+        }
+      }
+    }
+
+    &:nth-child(7n) {
+      .fog-areas__center {
+        background: url(../img/functions-1.png) repeat 0 0 #256578;
+
+        .fog-areas__icon {
+          svg {
+            fill: #D7F3F5;
+          }
+        }
+
+        .fog-areas__text {
+          color: #D7F3F5;
+        }
+      }
+
+      .fog-areas__right {
+        background: url(../img/areas-2.png) no-repeat 0 0 #85B354;
+        background-size: cover;
+
+        .fog-areas__icon {
+          svg {
+            fill: #F3EEE1;
+          }
+        }
+
+        .fog-areas__text {
+          color: #F3EEE1;
+        }
+      }
+    }
+
+    @include media(mobile) {
+      flex-direction: column;
+      margin: 0 0 20px 0;
+    }
+  }
+
+  &__left, &__center, &__right {
+    margin: 0 5px 0 5px;
+    width: 33%;
+    max-width: 633px;
+    height: 303px;
+    overflow: hidden;
+
+    @include media(mobile) {
+      margin: 0;
+      width: 100%;
+      max-width: none;
+    }
+  }
+
+  &__left {
+    position: relative;
+    background: #324158;
+  }
+
+  &__center {
+    background: #a5c8de;
+
+    .fog-areas__icon {
+      svg {
+        fill: #324158;
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__right {
+    background: url(../img/areas-1.jpg) no-repeat 0 0 #85B354;
+    background-size: cover;
+
+    .fog-areas__icon {
+      svg {
+        fill: #514920;
+      }
+    }
+  }
+
+  &__icon {
+    width: 58px;
+    height: 55px;
+    margin: 15px auto 5px auto;
+    opacity: 0.78;
+  }
+
+  &__image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    img {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    margin: 100px 0 0 0;
+    width: 100%;
+    font: italic normal normal 21px/1.1em $Sans;
+    color: #FFFFFF;
+    text-align: center;
+  }
+
+  &__text {
+    margin: 25px 10px 5px 10px;
+    font: normal normal normal 14px/1.1em Verdana, geneva, sans-serif;
+    color: #282527;
+
+    @include media(desktop) {
+      margin: 25px 70px 5px 70px;
+      font-size: 16px;
+    }
+  }
 }
 
 .controllers {
