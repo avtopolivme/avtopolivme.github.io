@@ -259,6 +259,14 @@ main {
   font: normal normal normal 14px/1.3em $Sans;
   color: #282527;
 
+  h1 {
+    padding: 70px 0 50px 0;
+    color: #535A0A;
+    font-size: 34px;
+    line-height: 28px;
+    text-align: center;
+  }
+
   h2 {
     margin: 0 55px 50px 55px;
     color: #535A0A;
@@ -442,6 +450,20 @@ main {
   a {
     font-weight: bold;
     color: #535A0A;
+  }
+
+  h1 {
+    padding: 70px 0 50px 0;
+    font: normal bold normal 34px/1.1em $Sans;
+    color: #535A0A;
+    text-align: center;
+  }
+
+  h2 {
+    margin: 0 0 10px 0;
+    font: italic bold normal 24px/1.1em $Sans;
+    color: #535A0A;
+    text-align: center;
   }
 
   @include media(mobile) {
@@ -756,6 +778,13 @@ main {
       color: #000000;
     }
 
+    h1 {
+      padding: 70px 0 50px 0;
+      font: normal bold normal 34px/1.1em $Sans;
+      color: #535A0A;
+      text-align: center;
+    }
+
     h2 {
       padding: 0 0 10px 0;
       font: italic bold normal 24px/1.1em $Sans;
@@ -986,8 +1015,15 @@ main {
       color: #000000;
     }
 
+    h1 {
+      padding: 70px 0 50px 0;
+      font: normal bold normal 34px/1.1em $Sans;
+      color: #324158;
+      text-align: center;
+    }
+
     h2 {
-      padding: 0 0 10px 0;
+      padding: 10px 0 10px 0;
       font: italic bold normal 24px/1.1em $Sans;
       color: #324158;
       text-align: center;
@@ -1337,6 +1373,13 @@ main {
 
     a {
       color: #000000;
+    }
+
+    h1 {
+      padding: 70px 0 50px 0;
+      font: normal bold normal 34px/1.1em $Sans;
+      color: #535A0A;
+      text-align: center;
     }
 
     h2 {

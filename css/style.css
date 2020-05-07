@@ -996,6 +996,12 @@ main {
   background: url(../img/shadow.png) repeat-x 0 0 white;
   font: normal normal normal 14px/1.3em "Open Sans", sans-serif;
   color: #282527; }
+  .articles h1 {
+    padding: 70px 0 50px 0;
+    color: #535A0A;
+    font-size: 34px;
+    line-height: 28px;
+    text-align: center; }
   .articles h2 {
     margin: 0 55px 50px 55px;
     color: #535A0A;
@@ -1115,6 +1121,16 @@ main {
   .mainpage-text a {
     font-weight: bold;
     color: #535A0A; }
+  .mainpage-text h1 {
+    padding: 70px 0 50px 0;
+    font: normal bold normal 34px/1.1em "Open Sans", sans-serif;
+    color: #535A0A;
+    text-align: center; }
+  .mainpage-text h2 {
+    margin: 0 0 10px 0;
+    font: italic bold normal 24px/1.1em "Open Sans", sans-serif;
+    color: #535A0A;
+    text-align: center; }
   @media screen and (max-width: 767px) {
     .mainpage-text {
       padding: 20px 30px 20px 30px; } }
@@ -1331,6 +1347,11 @@ main {
     color: #000000; }
     .autowatering__text a {
       color: #000000; }
+    .autowatering__text h1 {
+      padding: 70px 0 50px 0;
+      font: normal bold normal 34px/1.1em "Open Sans", sans-serif;
+      color: #535A0A;
+      text-align: center; }
     .autowatering__text h2 {
       padding: 0 0 10px 0;
       font: italic bold normal 24px/1.1em "Open Sans", sans-serif;
@@ -1493,8 +1514,13 @@ main {
     color: #000000; }
     .fog__text a {
       color: #000000; }
+    .fog__text h1 {
+      padding: 70px 0 50px 0;
+      font: normal bold normal 34px/1.1em "Open Sans", sans-serif;
+      color: #324158;
+      text-align: center; }
     .fog__text h2 {
-      padding: 0 0 10px 0;
+      padding: 10px 0 10px 0;
       font: italic bold normal 24px/1.1em "Open Sans", sans-serif;
       color: #324158;
       text-align: center; }
@@ -1687,6 +1713,11 @@ main {
     color: #000000; }
     .controllers__text a {
       color: #000000; }
+    .controllers__text h1 {
+      padding: 70px 0 50px 0;
+      font: normal bold normal 34px/1.1em "Open Sans", sans-serif;
+      color: #535A0A;
+      text-align: center; }
     .controllers__text h2 {
       padding: 0 0 10px 0;
       font: italic bold normal 24px/1.1em "Open Sans", sans-serif;
